@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-messenger-queries-schemes" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+	<name>FB Messenger QueriesSchemes</name>
+	<author>William Isted - https://github.com/WilliamIsted</author>
+	<description>Add LSApplicationQueriesSchemes dict to Info.plist to allow access to fb-messenger.</description>
+	<engines>
+		<engine name="cordova" version=">=3.0.0"/>
+	</engines>
+	<platform name="ios">
+		<config-file parent="LSApplicationQueriesSchemes" target="*-Info.plist">
+			<array>
+                <string>fb-messenger</string>
+            </array>
+		</config-file>
+	</platform>
+</plugin>
